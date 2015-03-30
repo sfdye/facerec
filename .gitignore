@@ -1,3 +1,5 @@
 *.pyc
 *.pkl
 serverlog.log
+*.png
+data/
