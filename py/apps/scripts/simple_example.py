@@ -125,7 +125,7 @@ if __name__ == "__main__":
     # Then turn the first (at most) 16 eigenvectors into grayscale
     # images (note: eigenvectors are stored by column!)
     E = []
-    for i in xrange(min(model.feature.eigenvectors.shape[1], 16)):
+    for i in xrange(min(model.feature.eigenvectors.shape[1], 5)):
         e = model.feature.eigenvectors[:,i].reshape(X[0].shape)
         E.append(minmax_normalize(e,0,255, dtype=np.uint8))
     # Plot them and store the plot to "python_fisherfaces_fisherfaces.pdf"
